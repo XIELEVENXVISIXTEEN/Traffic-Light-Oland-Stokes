@@ -10,3 +10,50 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+button{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    
+
+}
+.redLight{
+    background-color: rgba(235, 17, 17, 0.693);
+    border-color: rgba(0, 0, 0, 0.382);
+    border-width:6px;
+}
+    
+    
+
+.yellowLight{
+    background-color: rgba(243, 243, 8, 0.51);
+    border-color: rgba(0, 0, 0, 0.382);
+    border-width:6px;
+}
+ 
+
+.greenLight{
+    background-color: rgba(10, 143, 39, 0.599);
+    border-color: rgba(0, 0, 0, 0.382);
+    border-width:6px;
+}
+
+
+.traffic-light-box{
+    width:300px;
+    height:580px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px;
+}
+
+.h2{
+    text-decoration-color: #fff;
+}
+&:active{
+    background-color: #fff;
+}

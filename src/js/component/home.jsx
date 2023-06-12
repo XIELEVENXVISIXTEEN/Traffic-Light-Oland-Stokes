@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import ReactDOM from "react-dom";
 
 //include images into your bundle
@@ -10,23 +10,23 @@ import ReactDOM from "react-dom";
 const TrafficLight = () => {
 
 	const [ color, setColor] = useState("");
-    return (
+
+ 
+	return(
+    <div className="traffic-light-box col col-1 display-flex">
 		
-    <div className="col col-1 display-flex">
-		<h2>{color}</h2>
-		<span onClick={() => setColor("red")}>
-		   <button className="redLight btn btn-danger"></button>
-		</span>
-		<span onClick={() => setColor("yellow")}>
-		   <button className="yellowLight btn btn-warning">Yellow Light</button>
-		</span>
-		<span onClick={() => setColor("green")}>
-		   <button className="greenLight btn btn-success">Green Light</button>
-		</span>
-    </div>
+		<button onClick={() => setColor("red")} className="redLight btn btn-danger" id="mybutton"
+	 aria-pressed="mixed" data-bs-toggle="button"></button>
+		
+		<button onClick={() => setColor("yellow")} className="yellowLight btn btn-warning" id="mybutton"
+		 aria-pressed="mixed" data-bs-togggle="button"></button>
+		
+		<button onClick={() => setColor("green")} className="greenLight btn btn-success" id="mybutton"
+		aria-pressed="mixed" data-bs-toggle="button"></button>
+		</div>
 
 	
-	);
-};
+	);	
+	};
 
 export default TrafficLight;
